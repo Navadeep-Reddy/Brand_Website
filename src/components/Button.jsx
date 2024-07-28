@@ -1,8 +1,13 @@
-const Button = ({ userheight, userwidth, children }) => {
+const Button = ({ userheight, userwidth, marginX, children, userFont }) => {
   return (
     <button
-      className=" bg-ctPur font-semibold"
-      style={{ height: userheight, width: userwidth }}
+      className=" bg-ctPur font-semibold text-ctYel rounded-md drop-shadow-2xl"
+      style={{
+        height: userheight,
+        width: userwidth,
+        marginRight: marginX,
+        fontSize: userFont,
+      }}
     >
       {children}
     </button>
