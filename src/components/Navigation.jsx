@@ -1,3 +1,5 @@
+import Button from "./Button";
+
 const Nav = () => {
   return (
     <nav className="flex justify-between max-w-screen-2xl m-auto h-[4.5rem]  text-ctYel pt-4">
@@ -10,7 +12,7 @@ const Nav = () => {
         <li className="mr-6 font-semibold">ABOUT</li>
         <li className="mr-6 font-semibold">CONTACT</li>
       </ul>
-      <button className="  bg-ctPur font-semibold h-10 w-20 ">Login</button>
+      <Button userheight= "40px" userwidth="80px">Login</Button>
     </nav>
   );
 };
